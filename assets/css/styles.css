@@ -14,7 +14,8 @@ body{
     background-color: #ffffff;
     width: 50rem;
     padding: 30px 40px;
-    position: absolute;
+    position: fixed;
+    top: 50%;
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
@@ -52,7 +53,7 @@ body{
     line-height: 25px;
 }
 
-a{
+a #close2{
     display: block;
     width: 150px;
     position: relative;
@@ -98,4 +99,48 @@ input {
   width: 7em;
   vertical-align: middle;
   text-align: left;
+}
+
+.popup2{
+    background-color: #ffffff;
+    width: 50rem;
+    padding: 30px 40px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 5rem;
+    border-style: solid;
+    z-index: 5;
+    display: none;
+    font-family: "Poppins",sans-serif;
+    text-align: center;
+}
+
+
+.popup2 #close3{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+    background: #03549a;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: right;
+}
+
+.popup2 h2{
+   margin-top: -20px;
+}
+.popup2 p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
 }

@@ -57,11 +57,19 @@
 		<div class="popup">
 					<button id="close">&times;</button>
 					<h2>Breaking News!!</h2>
-					<p style = "text-align:center;">Javonte'Quavius Draco from Utah has just bought a shirt!
+					<p style = "text-align:center;">Another user has just bought a shirt!
 						<br>Hurry and add one to your shopping list before it's too late!</p>
 					<a id="close2" href="#">Let's Go</a>
 		</div>
 
+		<div class="popup2">
+					<button id="close3">&times;</button>
+					<h2>Breaking News!!</h2>
+					<p style = "text-align:center;"><h1>Enjoy 18% off</h1><br>your first order</p>
+					<button class= "btn btn-primary" id="close4" >Get 18% off your first order</button>
+					<br><br>
+					<a id= "close5" href= "#"> I don't want 18% off</a>
+		</div>
 
 
 
@@ -94,11 +102,23 @@
 	window.addEventListener("load", function(){
 			setTimeout(
 				function open(event){
-				document.querySelector(".popup").style.display = "block";
+				document.querySelector(".popup2").style.display = "block";
 			},
 			5000
 			)
 		});
+
+
+
+//Uncomment for repeated ad
+
+window.setInterval(function open(event){
+document.querySelector(".popup").style.display = "block";
+},
+10000);
+
+
+
 
 	document.querySelector("#close").addEventListener("click", function(){
 	    document.querySelector(".popup").style.display = "none";
@@ -107,6 +127,19 @@
 	document.querySelector("#close2").addEventListener("click", function(){
 			document.querySelector(".popup").style.display = "none";
 	});
+
+	document.querySelector("#close3").addEventListener("click", function(){
+	    document.querySelector(".popup2").style.display = "none";
+	});
+
+	document.querySelector("#close4").addEventListener("click", function(){
+			document.querySelector(".popup2").style.display = "none";
+	});
+
+	document.querySelector("#close5").addEventListener("click", function(){
+			document.querySelector(".popup2").style.display = "none";
+	});
+
 
 	</script>
 </body>
