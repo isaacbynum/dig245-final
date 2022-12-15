@@ -19,8 +19,7 @@ body{
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
-    border-radius: 5rem;
-    border-style: solid;
+    border-radius: 2rem;
     z-index: 5;
     display: none;
     font-family: "Poppins",sans-serif;
@@ -35,7 +34,7 @@ body{
     font-size: 30px;
     color: #ffffff;
     background: #03549a;
-    border-radius: 100%;
+    border-radius: 1rem;
     width: 40px;
     height: 40px;
     border: none;
@@ -119,8 +118,7 @@ input {
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
-    border-radius: 5rem;
-    border-style: solid;
+    border-radius: 2rem;
     z-index: 5;
     display: none;
     font-family: "Poppins",sans-serif;
@@ -135,7 +133,7 @@ input {
     font-size: 30px;
     color: #ffffff;
     background: #03549a;
-    border-radius: 100%;
+    border-radius: 2rem;
     width: 40px;
     height: 40px;
     border: none;
